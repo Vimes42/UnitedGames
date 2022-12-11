@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   sodipodi:docname="sipka-doprava.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="88.949153"
+     inkscape:cy="256"
+     inkscape:window-width="1920"
+     inkscape:window-height="1217"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g8">
+    <path
+       style="fill:#fdc300;stroke:#fdc300;stroke-width:2.16949;stroke-opacity:1"
+       d="m 126.14379,71.181846 c 2.25067,-7.022522 30.89072,-36.038618 40.19124,-40.718924 6.7671,-3.405416 20.69908,-3.645311 28.52439,-0.49116 8.1367,3.279667 196.81969,200.322228 200.32347,209.198758 3.93776,9.97599 3.48724,17.77865 -1.62472,28.13911 -5.24753,10.63524 -197.4757,195.5029 -206.60049,198.68964 -8.64199,3.01815 -22.38713,2.3786 -29.23341,-1.36022 -3.18822,-1.7411 -13.08273,-10.97131 -21.98785,-20.51159 -12.98509,-13.91124 -16.44853,-19.078 -17.49111,-26.09319 -2.52119,-16.96423 -0.0527,-19.99335 78.33743,-96.12831 L 270.26817,250.34039 259.89409,238.9524 C 254.18835,232.689 222.47354,199.32057 189.41676,164.80034 154.10482,127.92512 128.12328,99.020914 126.42793,94.725913 123.20818,86.568965 123.13578,80.56754 126.14379,71.181846 Z"
+       id="path2638" />
+  </g>
+</svg>

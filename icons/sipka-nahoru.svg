@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   sodipodi:docname="sipka-nahoru.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="92.20339"
+     inkscape:cy="256"
+     inkscape:window-width="1920"
+     inkscape:window-height="1217"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g8">
+    <path
+       style="fill:#fdc300;stroke:#fdc300;stroke-width:2.16949;stroke-opacity:1"
+       d="M 83.653886,403.41588 C 76.588117,401.3049 47.009836,373.24583 42.146034,364.03994 38.607106,357.3417 38.091008,343.41721 41.089374,335.5309 44.207058,327.33077 237.46957,134.77781 246.27488,131.09871 c 9.89595,-4.13479 17.70601,-3.83908 28.1658,1.06644 10.7372,5.03562 199.38011,193.56034 202.74716,202.62015 3.18891,8.58045 2.82203,22.33557 -0.7803,29.25464 -1.67754,3.22211 -10.70974,13.2977 -20.07157,22.39024 -13.65103,13.25837 -18.7481,16.82358 -25.74124,18.00506 -16.9109,2.85707 -19.98837,0.44913 -97.66272,-76.41595 l -73.01258,-72.2519 -11.18005,10.59785 c -6.14903,5.82881 -38.88204,38.19903 -72.74002,71.9338 -36.16778,36.03618 -64.55113,62.58574 -68.81167,64.36592 -8.091502,3.38085 -14.090311,3.57224 -23.533804,0.75092 z"
+       id="path2638" />
+  </g>
+</svg>
