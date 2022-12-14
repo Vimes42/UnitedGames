@@ -1,5 +1,67 @@
 @use 'colors';
 
+body {
+    font-family: Ubuntu, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: colors.$primary;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    height: 150px;
+    padding: 10px 20px;
+}
+
+.header__text {
+    color: colors.$secondary;
+    padding: 70px 20px 0 20px;
+    font-size: 25px;
+}
+
+nav {
+    background-color: colors.$box-color;
+}
+
+.menu__list { 
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+.menu__link {
+    text-decoration: none;
+}
+
+
+
+
 h1 {
     color: colors.$primary;
+}
+
+footer {
+    background-color: colors.$box-color;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__text {
+    color: colors.$primary;
+    padding: 20px;
+    
+}
+
+.footer__icons {
+    padding: 35px;
+}
+
+.footer__link {
+    height: 30px;
+    padding: 0 20px;
 }
