@@ -66,9 +66,6 @@ nav .menu__link .menu__link:active {
     list-style: none;
     padding: 0;
   }
-  nav .menu__item {
-    margin: 20px 0;
-  }
   nav .menu__link {
     text-decoration: none;
     color: #F6F6F6;
@@ -86,36 +83,6 @@ nav .menu__link .menu__link:active {
     color: #fbbc09;
   }
 }
-nav {
-  background-color: #424242;
-}
-nav .menu__list {
-  margin: 0;
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  padding: 0;
-}
-nav .menu__item {
-  margin: 20px 0;
-}
-nav .menu__link {
-  text-decoration: none;
-  color: #F6F6F6;
-  font-weight: 600;
-  font-size: 20px;
-  padding: 20px 20px;
-  margin: 20px 0;
-}
-nav .menu__link:hover {
-  background-color: #F6F6F6;
-  color: #424242;
-}
-nav .menu__link:active {
-  background-color: #F6F6F6;
-  color: #fbbc09;
-}
-
 h1 {
   color: #fbbc09;
 }

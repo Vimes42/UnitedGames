@@ -16,7 +16,7 @@ nav {
         margin: 0;
         padding: 20px 0;
     }
-    
+
     .menu__item--active {
         color: colors.$primary;
         background-color: colors.$text-color-light;
@@ -56,9 +56,7 @@ nav {
            
         }
     
-        .menu__item {
-            margin: 20px 0;
-        }
+        
     
         .menu__link {
             text-decoration: none;
