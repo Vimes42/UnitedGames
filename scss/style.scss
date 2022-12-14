@@ -1,42 +1,50 @@
 @use 'colors';
+@use 'basic';
+@use 'header';
+@use 'menu';
+@use 'footer';
 
-body {
-    font-family: Ubuntu, sans-serif;
-    margin: 0;
-}
 
-header {
-    background-color: colors.$primary;
-    display: flex;
-    justify-content: space-between;
-}
 
-.header__logo {
-    height: 150px;
-    padding: 10px 20px;
-}
 
-.header__text {
-    color: colors.$secondary;
-    padding: 70px 20px 0 20px;
-    font-size: 25px;
-}
 
 nav {
     background-color: colors.$box-color;
-}
+    
 
-.menu__list { 
-    margin: 0;
-    display: flex;
-    list-style: none;
-    padding: 10px;
-}
+    .menu__list { 
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0;
+       
+    }
 
-.menu__link {
-    text-decoration: none;
-}
+    .menu__item {
+        margin: 20px 0;
+    }
 
+    .menu__link {
+        text-decoration: none;
+        color: colors.$secondary;
+        font-weight: 600;
+        font-size: 20px;
+        padding: 20px 20px;
+        margin: 20px 0;
+    }
+
+    .menu__link:hover {
+        background-color: colors.$secondary;
+        color: colors.$box-color;
+    }
+
+    .menu__link:active {
+        background-color: colors.$secondary;
+        color: colors.$primary;
+    }
+    
+}
 
 
 
@@ -46,22 +54,24 @@ h1 {
 
 footer {
     background-color: colors.$box-color;
-    height: 100px;
     display: flex;
-    justify-content: space-around;
-}
+    justify-content: space-between;
 
-.footer__text {
-    color: colors.$primary;
-    padding: 20px;
+    .footer__text {
+        color: colors.$primary;
+        margin: 20px 0 20px 50px;
+    }
     
+    .footer__icons {
+        margin: 20px 50px 20px 0;
+    }
+    
+    .footer__link {
+        height: 2vh;
+        padding: 0 2vw;
+
+    }
+    
+
 }
 
-.footer__icons {
-    padding: 35px;
-}
-
-.footer__link {
-    height: 30px;
-    padding: 0 20px;
-}

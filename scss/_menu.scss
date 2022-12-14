@@ -1,0 +1,83 @@
+@use 'colors';
+
+nav {
+    background-color: colors.$box-color;
+    
+
+    .menu__list { 
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu__item {
+        margin: 0;
+        padding: 20px 0;
+    }
+    
+    .menu__item--active {
+        color: colors.$primary;
+        background-color: colors.$text-color-light;
+        padding: 20px 0;
+    }
+
+
+    .menu__link {
+        text-decoration: none;
+        color: colors.$secondary;
+        font-weight: 600;
+        font-size: 20px;
+
+        .menu__link:hover {
+            background-color: colors.$secondary;
+            color: colors.$box-color;
+        }
+    
+        .menu__link:active {
+            background-color: colors.$secondary;
+            color: colors.$primary;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    nav {
+        background-color: colors.$box-color;
+        
+    
+        .menu__list { 
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            padding: 0;
+           
+        }
+    
+        .menu__item {
+            margin: 20px 0;
+        }
+    
+        .menu__link {
+            text-decoration: none;
+            color: colors.$secondary;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 20px 20px;
+            margin: 20px 0;
+        }
+    
+        .menu__link:hover {
+            background-color: colors.$secondary;
+            color: colors.$box-color;
+        }
+    
+        .menu__link:active {
+            background-color: colors.$secondary;
+            color: colors.$primary;
+        }
+        
+    }
+}

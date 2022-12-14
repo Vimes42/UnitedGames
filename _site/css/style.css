@@ -5,34 +5,115 @@ body {
 
 header {
   background-color: #fbbc09;
-  display: flex;
-  justify-content: space-between;
+  background-image: url(/images/2012MudisShiny18.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header .header__logo {
+  width: 100%;
+  max-width: 200px;
+  padding: 30px 20px 10px 20px;
 }
 
-.header__logo {
-  height: 150px;
-  padding: 10px 20px;
+@media screen and (min-width: 715px) {
+  header {
+    height: 40vh;
+  }
 }
-
-.header__text {
-  color: #F6F6F6;
-  padding: 70px 20px 0 20px;
-  font-size: 25px;
-}
-
 nav {
   background-color: #424242;
 }
-
-.menu__list {
+nav .menu__list {
   margin: 0;
   display: flex;
+  justify-content: space-evenly;
   list-style: none;
-  padding: 10px;
+  padding: 0;
+}
+nav .menu__item {
+  margin: 0;
+  padding: 20px 0;
+}
+nav .menu__item--active {
+  color: #fbbc09;
+  background-color: #a8a7a7;
+  padding: 20px 0;
+}
+nav .menu__link {
+  text-decoration: none;
+  color: #F6F6F6;
+  font-weight: 600;
+  font-size: 20px;
+}
+nav .menu__link .menu__link:hover {
+  background-color: #F6F6F6;
+  color: #424242;
+}
+nav .menu__link .menu__link:active {
+  background-color: #F6F6F6;
+  color: #fbbc09;
 }
 
-.menu__link {
+@media screen and (min-width: 640px) {
+  nav {
+    background-color: #424242;
+  }
+  nav .menu__list {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+  }
+  nav .menu__item {
+    margin: 20px 0;
+  }
+  nav .menu__link {
+    text-decoration: none;
+    color: #F6F6F6;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 20px;
+    margin: 20px 0;
+  }
+  nav .menu__link:hover {
+    background-color: #F6F6F6;
+    color: #424242;
+  }
+  nav .menu__link:active {
+    background-color: #F6F6F6;
+    color: #fbbc09;
+  }
+}
+nav {
+  background-color: #424242;
+}
+nav .menu__list {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+}
+nav .menu__item {
+  margin: 20px 0;
+}
+nav .menu__link {
   text-decoration: none;
+  color: #F6F6F6;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px 20px;
+  margin: 20px 0;
+}
+nav .menu__link:hover {
+  background-color: #F6F6F6;
+  color: #424242;
+}
+nav .menu__link:active {
+  background-color: #F6F6F6;
+  color: #fbbc09;
 }
 
 h1 {
@@ -41,21 +122,17 @@ h1 {
 
 footer {
   background-color: #424242;
-  height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-
-.footer__text {
+footer .footer__text {
   color: #fbbc09;
-  padding: 20px;
+  margin: 20px 0 20px 50px;
 }
-
-.footer__icons {
-  padding: 35px;
+footer .footer__icons {
+  margin: 20px 50px 20px 0;
 }
-
-.footer__link {
-  height: 30px;
-  padding: 0 20px;
+footer .footer__link {
+  height: 2vh;
+  padding: 0 2vw;
 }/*# sourceMappingURL=style.css.map */
