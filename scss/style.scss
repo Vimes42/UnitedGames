@@ -15,6 +15,12 @@
         margin-bottom: 50px;
         font-weight: 600;
     }
+
+    .front-intro__text--small {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
     
     .front-intro__column {
         border: 1px solid colors.$text-color-light;
@@ -27,7 +33,7 @@
     }
 }
 
-.front-intro::after {
+.front-intro + .front-intro::before {
     content: "";
     display: block;
     width: 300px;
@@ -71,9 +77,10 @@
 }
 
 .front-intro__list {
-    list-style:circle;
+    list-style: circle;
     text-align: left;
     margin-bottom: 50px;
+    line-height: 150%;
 }
 
 button {
@@ -81,7 +88,7 @@ button {
     background-color: colors.$box-color;
     color: colors.$secondary;
     border: none;
-    border-radius: 5%;
+    border-radius: 10%;
     font-size: 20px;
     font-weight: 600;
 }
