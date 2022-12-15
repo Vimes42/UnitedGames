@@ -1,6 +1,38 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Ubuntu, sans-serif;
   margin: 0;
+}
+
+main {
+  margin: 20px;
+}
+
+h1 {
+  color: #fbbc09;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h2 {
+  color: #fbbc09;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #fbbc09;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+h4 {
+  color: #424242;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 header {
@@ -79,6 +111,76 @@ footer .footer__link .footer__link + .footer__link {
   margin-left: 0;
 }
 
-h1 {
+.front-intro {
+  margin: 50px 0;
+  text-align: center;
+}
+.front-intro .front-intro__text {
+  font-size: 25px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+.front-intro .front-intro__column {
+  border: 1px solid #a8a7a7;
+  margin: 20px 0;
+  padding: 20px;
+}
+.front-intro .front-intro__column-container + .front-intro__text {
+  margin-top: 50px;
+}
+
+.front-intro::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 3px;
+  background-color: #a8a7a7;
+  margin: 50px auto;
+}
+
+.more-info-link {
+  display: block;
+  text-align: right;
+  margin-top: 50px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
   color: #fbbc09;
+}
+
+.icon-arrow-right {
+  width: 100%;
+  max-width: 15px;
+}
+
+.front-team__member {
+  padding: 20px;
+}
+.front-team__member .front-team__picture {
+  width: 100%;
+  max-width: 400px;
+  border: 5px solid #fbbc09;
+  border-radius: 50%;
+}
+
+.front-intro__video {
+  width: 100%;
+  max-width: 70vw;
+  margin-top: 30px;
+}
+
+.front-intro__list {
+  list-style: circle;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+button {
+  padding: 15px;
+  background-color: #424242;
+  color: #F6F6F6;
+  border: none;
+  border-radius: 5%;
+  font-size: 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

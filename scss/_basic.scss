@@ -1,6 +1,39 @@
 @use 'colors';
 
+*, :after, :before {
+    box-sizing: border-box;
+  }
+
 body {
     font-family: Ubuntu, sans-serif;
     margin: 0;
+
+}
+
+main {
+    margin: 20px;
+}
+
+h1 {
+    color: colors.$primary;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h2 {
+    color: colors.$primary;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h3 {
+    color: colors.$primary;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+h4 {
+    color: colors.$box-color;
+    font-size: 25px;
+    font-weight: 600;
 }
