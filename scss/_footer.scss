@@ -13,16 +13,16 @@ footer {
     }
     
     .footer__icons {
-        margin: 20px 0 20px 30px;
+        margin: 20px 30px;
     }
     
     .footer__link {
         height: 2vh;
         padding: 0 2vw;
     
-    .footer__link + .footer__link {
-        margin-left: 0;
-    }
+        .footer__link + .footer__link {
+            margin-left: 0;
+        }
     }
     
 }

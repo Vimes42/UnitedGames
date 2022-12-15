@@ -26,10 +26,29 @@
         border: 1px solid colors.$text-color-light;
         margin: 20px 0;
         padding: 20px;
+        background-color: colors.$box-color-light;
+        border-radius: 5%;
+    }
+
+    div[class*="video"] {
+        background-color: white;
     }
     
     .front-intro__column-container + .front-intro__text {
         margin-top: 50px;
+    }
+
+    .front-intro__video {
+        width: 100%;
+        max-width: 90vw;
+        margin-top: 30px;
+    }
+    
+    .front-intro__list {
+        list-style: circle;
+        text-align: left;
+        margin-bottom: 50px;
+        line-height: 150%;
     }
 }
 
@@ -64,26 +83,14 @@
 
     .front-team__picture {
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
         border: 5px solid colors.$primary;
         border-radius: 50%;
     }
 }
 
-.front-intro__video {
-    width: 100%;
-    max-width: 70vw;
-    margin-top: 30px;
-}
 
-.front-intro__list {
-    list-style: circle;
-    text-align: left;
-    margin-bottom: 50px;
-    line-height: 150%;
-}
-
-button {
+.button__link {
     padding: 15px;
     background-color: colors.$box-color;
     color: colors.$secondary;
@@ -91,4 +98,5 @@ button {
     border-radius: 10%;
     font-size: 20px;
     font-weight: 600;
+    text-decoration: none;
 }

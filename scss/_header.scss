@@ -2,22 +2,19 @@
 
 header {
     background-color: colors.$primary;
-    background-image: url(/images/header-photo-small.jpeg);
+    background-image: url(/images/2012MudisShiny18.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 20vh;
+    
 
-    .header__text {
-        opacity: 0%;
+    .header__logo {
+        width: 100%;
+        max-width: 20vw;
+        height: 80%;
+        padding: 4vw;
     }
 }
 
-@media screen and (min-width: 715px){
 
-header {
-    height: 30vh;
-}
-   
-}
 
