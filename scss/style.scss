@@ -11,26 +11,3 @@ h1 {
     color: colors.$primary;
 }
 
-footer {
-    background-color: colors.$box-color;
-    display: flex;
-    justify-content: space-between;
-
-    .footer__text {
-        color: colors.$primary;
-        margin: 20px 0 20px 50px;
-    }
-    
-    .footer__icons {
-        margin: 20px 50px 20px 0;
-    }
-    
-    .footer__link {
-        height: 2vh;
-        padding: 0 2vw;
-
-    }
-    
-
-}
-
