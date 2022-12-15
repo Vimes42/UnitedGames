@@ -23,42 +23,40 @@ header .header__text {
 nav {
   background-color: #424242;
 }
+nav .menu__checkbox, nav .menu__checkbox-label {
+  display: none;
+}
 nav .menu__list {
   margin: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style: none;
-  padding: 0;
+  padding: 1em 0;
   margin: 0;
-}
-nav .menu__item {
-  margin: 0;
-  padding: 1em;
-}
-nav .menu__item--active {
-  color: #424242;
-  background-color: #fbbc09;
 }
 nav .menu__link {
   text-decoration: none;
   color: #F6F6F6;
   font-weight: 600;
   font-size: 20px;
+  padding: 1em 1em;
 }
-nav .menu__item:hover {
+nav .menu__link:hover {
   background-color: #F6F6F6;
   color: #424242;
-  padding: 1em;
 }
-nav .menu__item:active {
+nav .menu__link:active {
   background-color: #F6F6F6;
   color: #fbbc09;
-  padding: 1em;
+}
+nav .menu__link--active {
+  background-color: #F6F6F6;
+  color: #424242;
 }
 
-@media screen and (min-width: 715px) {
-  nav {
-    background-color: #424242;
+@media screen and (max-width: 600px) {
+  .menu__item-secondary {
+    display: none;
   }
 }
 footer {

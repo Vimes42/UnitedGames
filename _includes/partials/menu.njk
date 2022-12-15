@@ -1,11 +1,13 @@
 <nav class="menu">
+    <input type="checkbox" class="menu__checkbox" id="menu__checkbox">
+    <label for="menu__checkbox" class="menu__checkbox-label">☰</label>
+
     <ul class="menu__list">
-        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }} "> <a href="" class="menu__link">Úvod</a></li>
-        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'o-nas' }}"> <a href="/o-nas/" class="menu__link">O nás</a></li>
-        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'lide' }}"> <a href="/lide/" class="menu__link">Lidé</a></li>
-        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'aktivity' }}"> <a href="/aktivity/" class="menu__link">Aktivity</a></li>
-        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '30-let' }}"> <a href="/30-let/" class="menu__link">30 let</a></li>
-        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'pridej-se' }}"> <a href="/pridej-se/" class="menu__link">Přidej se</a></li>
-        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakt' }}"> <a href="/kontakt/" class="menu__link">Kontakt</a></li>
+        <li class="menu__item menu__item-primary"> <a href="" class="menu__link {{ 'menu__link--active' if page.fileSlug === '' }} ">Úvod</a></li>
+        <li class="menu__item menu__item-secondary"> <a href="/o-nas/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'o-nas' }}">O nás</a></li>
+        <li class="menu__item menu__item-secondary"> <a href="/lide/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'lide' }}">Lidé</a></li>
+        <li class="menu__item menu__item-primary"> <a href="/aktivity/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'aktivity' }}">Aktivity</a></li>
+        <li class="menu__item menu__item-primary"> <a href="/30-let/" class="menu__link {{ 'menu__link--active' if page.fileSlug === '30-let' }}">30 let</a></li>
+        <li class="menu__item menu__item-primary"> <a href="/pridej-se/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'pridej-se' }}">Přidej se</a></li>
     </ul>
 </nav>
