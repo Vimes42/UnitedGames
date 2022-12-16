@@ -127,10 +127,10 @@ footer .footer__link .footer__link + .footer__link {
   margin-bottom: 50px;
 }
 .front-intro .front-intro__column {
-  border: 1px solid #a8a7a7;
+  border: 1px solid #fbbc09;
   margin: 20px 0;
   padding: 20px;
-  background-color: #f0ebeb;
+  background-color: #F6F6F6;
   border-radius: 2%;
 }
 .front-intro div[class*=video] {
