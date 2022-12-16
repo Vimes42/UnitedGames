@@ -15,12 +15,14 @@ h1 {
   color: #fbbc09;
   font-size: 50px;
   font-weight: 600;
+  margin-top: 50px;
 }
 
 h2 {
   color: #fbbc09;
   font-size: 40px;
   font-weight: 600;
+  margin-top: 50px;
 }
 
 h3 {
@@ -145,7 +147,8 @@ footer .footer__link .footer__link + .footer__link {
   list-style: circle;
   text-align: left;
   margin-bottom: 50px;
-  margin-left: 25vw;
+  display: inline-block;
+  margin: auto;
   line-height: 150%;
 }
 
@@ -176,11 +179,17 @@ footer .footer__link .footer__link + .footer__link {
 .front-team__member {
   padding: 20px;
 }
-.front-team__member .front-team__picture {
+
+.front-team__picture {
   width: 100%;
   max-width: 300px;
   border: 5px solid #fbbc09;
   border-radius: 50%;
+}
+
+.front-team__picture--float {
+  float: right;
+  max-width: 150px;
 }
 
 .button {
@@ -192,6 +201,11 @@ footer .footer__link .footer__link + .footer__link {
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
+  display: block;
+  margin: 50px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .button:hover {
@@ -200,14 +214,17 @@ footer .footer__link .footer__link + .footer__link {
   border: 1px solid #424242;
 }
 
-.button-inpage {
-  margin: auto;
-}
-
 .contact-us {
   font-size: 25px;
   font-weight: 600;
   text-align: center;
+}
+
+.page__picture {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 10px auto;
 }
 
 @media screen and (min-width: 640px) {
@@ -230,6 +247,25 @@ footer .footer__link .footer__link + .footer__link {
     margin: 10px;
     padding: 20px;
   }
+  .page-text {
+    display: grid;
+    grid-template-columns: "1fr 1fr";
+    grid-template-rows: "auto";
+  }
+  .page-text__pictures {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 50px 30px;
+  }
+  .page-text__text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .page__picture {
+    margin: 100px 0;
+    width: 100%;
+    max-width: 40vw;
+  }
 }
 @media screen and (min-width: 800px) {
   .front-intro__column-container {
@@ -243,5 +279,8 @@ footer .footer__link .footer__link + .footer__link {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .page__picture {
+    max-width: 30vw;
   }
 }/*# sourceMappingURL=style.css.map */

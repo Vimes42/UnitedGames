@@ -1,0 +1,22 @@
+---
+layout: /layouts/main-template.njk
+---
+{% include 'partials/header.njk' %}
+{% include 'partials/menu.njk' %}
+    <main>
+        <div class="page-text">
+            <div class="page-text__text">
+                {{ content | safe }}
+            </div>
+            <div class="page-text__pictures">
+                <img src="/images/{{foto1}}" alt="{{alt}}" class="page__picture">
+                <img src="/images/{{foto2}}" alt="{{alt}}" class="page__picture">
+                <img src="/images/{{foto3}}" alt="{{alt}}" class="page__picture">
+                <img src="/images/{{foto4}}" alt="{{alt}}" class="page__picture">
+                <img src="/images/{{foto5}}" alt="{{alt}}" class="page__picture">
+                <img src="/images/{{foto6}}" alt="{{alt}}" class="page__picture">
+            </div>
+        </div>
+        
+    </main>
+{% include 'partials/footer.njk' %}
