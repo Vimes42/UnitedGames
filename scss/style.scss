@@ -27,7 +27,7 @@
         margin: 20px 0;
         padding: 20px;
         background-color: colors.$box-color-light;
-        border-radius: 5%;
+        border-radius: 2%;
     }
 
     div[class*="video"] {
@@ -138,6 +138,20 @@
     margin: 30px 0;
 }
 
+.activities__photo {
+    width: 100%;
+    max-width: 200px;
+    padding: 5px;
+}
+
+.team__list,
+.activity__list {
+    list-style: none;
+}
+
+
+
+
 
 @media screen and (min-width: 640px) {
     .front-intro__column-container {
@@ -245,5 +259,36 @@
         grid-template-columns: repeat( 3, 1fr );
 
         
+    }
+
+    .activities__projects-container {
+        display: grid;
+        grid-template-areas: 
+        "project1  project2"
+        "project3  project4";
+        
+        .activities__project {
+            margin: 30px;
+        }
+    
+        .activities__project1 {
+            grid-area: "project1";
+        }
+    
+        .activities__project2 {
+            grid-area: "project2";
+        }
+    
+        .activities__project3 {
+            grid-area: "project3";
+        }
+
+        .activities__project4 {
+            grid-area: "project4";
+        }
+    
+        .activity__project-date {
+            font-weight: 600;
+        }
     }
 }
