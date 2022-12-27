@@ -9,16 +9,12 @@ body {
     margin: 0;
 }
 
-main {
-    margin: 0 20px;
-}
-
 h1 {
     color: colors.$primary;
     font-family: 'Andika', sans-serif;
     font-size: 50px;
     font-weight: 600;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 h2 {
@@ -26,7 +22,7 @@ h2 {
     font-family: 'Andika', sans-serif;
     font-size: 40px;
     font-weight: 600;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 h3 {
@@ -34,7 +30,7 @@ h3 {
     font-family: 'Andika', sans-serif;
     font-size: 30px;
     font-weight: 600;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 h4 {
@@ -42,4 +38,32 @@ h4 {
     font-family: 'Andika', sans-serif;
     font-size: 25px;
     font-weight: 600;
+}
+
+@media screen and (min-width: 640px) {
+    h1 {
+        margin-top: 80px;
+    }
+
+    h2 {
+        margin-top: 60px;
+    }
+
+    h3 {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        margin-top: 100px;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
+
+    h3 {
+        margin-top: 60px;
+    }
 }

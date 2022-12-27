@@ -7,16 +7,12 @@ body {
   margin: 0;
 }
 
-main {
-  margin: 0 20px;
-}
-
 h1 {
   color: #fbbc09;
   font-family: "Andika", sans-serif;
   font-size: 50px;
   font-weight: 600;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 h2 {
@@ -24,7 +20,7 @@ h2 {
   font-family: "Andika", sans-serif;
   font-size: 40px;
   font-weight: 600;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 h3 {
@@ -32,7 +28,7 @@ h3 {
   font-family: "Andika", sans-serif;
   font-size: 30px;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 h4 {
@@ -42,6 +38,28 @@ h4 {
   font-weight: 600;
 }
 
+@media screen and (min-width: 640px) {
+  h1 {
+    margin-top: 80px;
+  }
+  h2 {
+    margin-top: 60px;
+  }
+  h3 {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    margin-top: 100px;
+  }
+  h2 {
+    margin-top: 80px;
+  }
+  h3 {
+    margin-top: 60px;
+  }
+}
 header {
   background-color: #fbbc09;
   background-image: url(/images/2012MudisShiny8.jpg);
@@ -101,18 +119,23 @@ nav .menu__link--active {
     display: none;
   }
 }
+@media screen and (min-width: 800px) {
+  .menu__link {
+    font-size: 30px;
+  }
+}
 footer {
   background-color: #424242;
-  display: flex;
-  justify-content: space-between;
   margin-top: 50px;
+  text-align: center;
 }
 footer .footer__text {
   color: #fbbc09;
-  margin: 20px 0 20px 30px;
+  padding-top: 20px;
 }
 footer .footer__icons {
   margin: 20px 30px;
+  padding-bottom: 20px;
 }
 footer .footer__link {
   height: 2vh;
@@ -122,16 +145,37 @@ footer .footer__link .footer__link + .footer__link {
   margin-left: 0;
 }
 
+@media screen and (min-width: 640px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footer__text {
+    margin: 20px 0 20px 50px;
+    padding: 0;
+  }
+  footer .footer__icons {
+    margin: 20px 50px 20px 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  footer .footer__text {
+    margin: 20px 0 20px 100px;
+  }
+  footer .footer__icons {
+    margin: 20px 100px 20px 0;
+  }
+}
 .front-intro {
   margin: 50px 0;
   text-align: center;
 }
 .front-intro .front-intro__text {
   font-size: 25px;
-  margin: 100px auto 50px auto;
+  margin: 80px auto 30px auto;
   font-weight: 600;
   width: 60%;
-  margin-bottom: 50px;
 }
 .front-intro .front-intro__text--small {
   font-size: 25px;
@@ -142,9 +186,6 @@ footer .footer__link .footer__link + .footer__link {
   margin: 20px 0;
   padding: 20px;
   border-radius: 2%;
-}
-.front-intro div[class*=video] {
-  background-color: white;
 }
 .front-intro .front-intro__column-container + .front-intro__text {
   margin-top: 50px;
@@ -161,13 +202,17 @@ footer .footer__link .footer__link + .footer__link {
   line-height: 150%;
 }
 
-.front-intro + .front-intro::before {
-  content: "";
-  display: block;
-  width: 300px;
-  height: 3px;
-  background-color: #a8a7a7;
-  margin: 50px auto;
+.front-intro-white {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.front-intro-grey {
+  background-color: #faf5f5;
+}
+
+.section-title-grey {
+  padding-top: 50px;
 }
 
 .more-info-link {
@@ -178,6 +223,10 @@ footer .footer__link .footer__link + .footer__link {
   font-size: 25px;
   font-weight: 400;
   color: #fbbc09;
+}
+
+.more-info-link-grey {
+  padding-bottom: 50px;
 }
 
 .icon-arrow-right {
@@ -262,23 +311,14 @@ footer .footer__link .footer__link + .footer__link {
     margin-bottom: 80px;
   }
   .front-intro__column-container {
-    display: grid;
-    grid-template-areas: "column1  column2" "column3  none";
-  }
-  .front-intro__column-container .front-intro__column1 {
-    grid-area: "column1";
-    width: 1fr;
-  }
-  .front-intro__column-container .front-intro__column2 {
-    grid-area: "column2";
-    width: 1fr;
-  }
-  .front-intro__column-container .front-intro__column3 {
-    grid-area: "column3";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .front-intro__column {
     margin: 10px;
-    padding: 20px;
+    padding: 30px;
+    width: calc((100% - 100px) / 3);
     border: 0.5px solid #a8a7a7;
   }
   .front-intro__column + .front-intro__column {

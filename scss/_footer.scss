@@ -3,18 +3,18 @@
 
 footer {
     background-color: colors.$box-color;
-    display: flex;
-    justify-content: space-between;
     margin-top: 50px;
+    text-align: center;
 
     .footer__text {
         color: colors.$primary;
-        margin: 20px 0 20px 30px;
+        padding-top: 20px;
         
     }
     
     .footer__icons {
         margin: 20px 30px;
+        padding-bottom: 20px;
     }
     
     .footer__link {
@@ -23,6 +23,37 @@ footer {
     
         .footer__link + .footer__link {
             margin-left: 0;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 640px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+    
+        .footer__text {
+            margin: 20px 0 20px 50px;
+            padding: 0;
+            
+        }
+        
+        .footer__icons {
+            margin: 20px 50px 20px 0;
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    footer {
+        .footer__text {
+            margin: 20px 0 20px 100px;        
+        }
+        
+        .footer__icons {
+            margin: 20px 100px 20px 0
         }
     }
     
