@@ -12,8 +12,10 @@
 
     .front-intro__text {
         font-size: 25px;
-        margin-bottom: 50px;
+        margin: 100px auto 50px auto;
         font-weight: 600;
+        width: 60%;
+        margin-bottom: 50px;
     }
 
     .front-intro__text--small {
@@ -23,10 +25,9 @@
     }
     
     .front-intro__column {
-        border: 1px solid colors.$primary;
         margin: 20px 0;
         padding: 20px;
-        background-color: colors.$secondary;
+        
         border-radius: 2%;
     }
 
@@ -155,6 +156,11 @@
 
 
 @media screen and (min-width: 640px) {
+    .front-intro__text {
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+    
     .front-intro__column-container {
         display: grid;
         grid-template-areas: 
@@ -175,10 +181,16 @@
             grid-area: "column3";
         }
 
-        .front-intro__column {
-            margin: 10px;
-            padding: 20px;
-        }
+    }
+
+    .front-intro__column {
+        margin: 10px;
+        padding: 20px;
+        border: 0.5px solid colors.$text-color-light;
+    }
+
+    .front-intro__column + .front-intro__column {
+        margin-left: 20px;
     }
 
     .page-text {
@@ -224,9 +236,13 @@
     .front-intro__column-container {
         display: grid;
         grid-template-columns: repeat( 3, 1fr );
+
+        .front-intro__column {
+            margin-bottom: 100px;
+        }
     
         .front-intro__column + .front-intro__column {
-            margin-left: 20px;
+            margin-left: 30px;
         }
     }
 

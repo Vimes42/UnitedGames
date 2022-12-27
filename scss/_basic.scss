@@ -5,7 +5,7 @@
   }
 
 body {
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
 }
 
@@ -15,27 +15,31 @@ main {
 
 h1 {
     color: colors.$primary;
+    font-family: 'Andika', sans-serif;
     font-size: 50px;
     font-weight: 600;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 h2 {
     color: colors.$primary;
+    font-family: 'Andika', sans-serif;
     font-size: 40px;
     font-weight: 600;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 h3 {
     color: colors.$primary;
+    font-family: 'Andika', sans-serif;
     font-size: 30px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 h4 {
     color: colors.$box-color;
+    font-family: 'Andika', sans-serif;
     font-size: 25px;
     font-weight: 600;
 }

@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin: 0;
 }
 
@@ -13,27 +13,31 @@ main {
 
 h1 {
   color: #fbbc09;
+  font-family: "Andika", sans-serif;
   font-size: 50px;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 h2 {
   color: #fbbc09;
+  font-family: "Andika", sans-serif;
   font-size: 40px;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 h3 {
   color: #fbbc09;
+  font-family: "Andika", sans-serif;
   font-size: 30px;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 h4 {
   color: #424242;
+  font-family: "Andika", sans-serif;
   font-size: 25px;
   font-weight: 600;
 }
@@ -44,14 +48,20 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 20vh;
 }
 header .header__logo {
   width: 100%;
-  max-width: 20vw;
-  height: 80%;
+  max-width: 30vw;
+  max-height: 80%;
   padding: 4vw;
 }
 
+@media screen and (min-width: 640px) {
+  header {
+    height: 60vh;
+  }
+}
 nav {
   background-color: #424242;
 }
@@ -118,8 +128,10 @@ footer .footer__link .footer__link + .footer__link {
 }
 .front-intro .front-intro__text {
   font-size: 25px;
-  margin-bottom: 50px;
+  margin: 100px auto 50px auto;
   font-weight: 600;
+  width: 60%;
+  margin-bottom: 50px;
 }
 .front-intro .front-intro__text--small {
   font-size: 25px;
@@ -127,10 +139,8 @@ footer .footer__link .footer__link + .footer__link {
   margin-bottom: 50px;
 }
 .front-intro .front-intro__column {
-  border: 1px solid #fbbc09;
   margin: 20px 0;
   padding: 20px;
-  background-color: #F6F6F6;
   border-radius: 2%;
 }
 .front-intro div[class*=video] {
@@ -189,6 +199,7 @@ footer .footer__link .footer__link + .footer__link {
 .front-team__picture--float {
   float: right;
   max-width: 150px;
+  margin: 10px;
 }
 
 .button {
@@ -246,6 +257,10 @@ footer .footer__link .footer__link + .footer__link {
 }
 
 @media screen and (min-width: 640px) {
+  .front-intro__text {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
   .front-intro__column-container {
     display: grid;
     grid-template-areas: "column1  column2" "column3  none";
@@ -261,9 +276,13 @@ footer .footer__link .footer__link + .footer__link {
   .front-intro__column-container .front-intro__column3 {
     grid-area: "column3";
   }
-  .front-intro__column-container .front-intro__column {
+  .front-intro__column {
     margin: 10px;
     padding: 20px;
+    border: 0.5px solid #a8a7a7;
+  }
+  .front-intro__column + .front-intro__column {
+    margin-left: 20px;
   }
   .page-text {
     display: grid;
@@ -302,8 +321,11 @@ footer .footer__link .footer__link + .footer__link {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .front-intro__column-container .front-intro__column {
+    margin-bottom: 100px;
+  }
   .front-intro__column-container .front-intro__column + .front-intro__column {
-    margin-left: 20px;
+    margin-left: 30px;
   }
   .front-team {
     display: flex;

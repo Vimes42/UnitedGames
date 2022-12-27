@@ -6,13 +6,19 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+    height: 20vh;
 
     .header__logo {
         width: 100%;
-        max-width: 20vw;
-        height: 80%;
+        max-width: 30vw;
+        max-height: 80%;
         padding: 4vw;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    header {
+        height: 60vh;
     }
 }
 
