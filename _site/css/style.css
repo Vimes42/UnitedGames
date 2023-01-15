@@ -20,6 +20,10 @@ a:hover {
   font-weight: bold;
 }
 
+main {
+  margin: 0 20px;
+}
+
 h1 {
   color: #fbbc09;
   font-family: "Andika", sans-serif;
@@ -412,10 +416,10 @@ footer .footer__link .footer__link + .footer__link {
   .anniversary__video-container .anniversary__video {
     width: 100%;
     max-width: 500px;
-    margin: 30px 30px 0 0;
   }
   .anniversary__video-container .anniversary__video-box {
     text-align: center;
+    margin: 30px 30px 0 0;
   }
   .activities__projects-container {
     display: grid;
