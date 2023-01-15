@@ -45,6 +45,8 @@
         margin: auto;
         line-height: 150%;
     }
+
+    
 }
 
 
@@ -163,25 +165,7 @@
         margin-bottom: 80px;
     }
     
-    .front-intro__column-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .front-intro__column {
-        margin: 10px;
-        padding: 30px;
-        width: calc((100% - 100px) / 3);
-        border: 0.5px solid colors.$text-color-light;
-    }
-
-    
-
-    .front-intro__column + .front-intro__column {
-        margin-left: 20px;
-    }
-
+   
     .page-text {
         display: grid;
         grid-template-columns: "1fr 1fr";
@@ -204,21 +188,7 @@
         max-width: 40vw;
     }
 
-    .anniversary__video-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
-        .anniversary__video {
-            width: 100%;
-            max-width: 250px;
-            margin: 30px 30px 0 0;
-        }
-
-        .anniversary__video-box {
-            text-align: center;
-
-        }
-    }
+    
 }
 
 @media screen and (min-width: 800px) {
@@ -228,11 +198,22 @@
 
         .front-intro__column {
             margin-bottom: 100px;
+            border: 1px solid colors.$primary;
+            margin: 0 5px;
         }
-    
-        .front-intro__column + .front-intro__column {
-            margin-left: 30px;
-        }
+    }
+
+    .page-intro {
+        font-size: 20px;
+        font-weight: bold;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .front-intro__column-container--anniversary {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .front-team {
@@ -260,11 +241,33 @@
         list-style: none;
     }
 
+    .infobox-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+
+        .infobox-container__item {
+            border: 1px solid colors.$primary;
+            margin: 0 10px;
+            max-width: 45%;
+            padding: 20px;
+        }
+    }
+
     .anniversary__video-container {
         display: grid;
-        grid-template-columns: repeat( 3, 1fr );
-
+        grid-template-columns: repeat(2, 1fr);
         
+        .anniversary__video {
+            width: 100%;
+            max-width: 500px;
+            margin: 30px 30px 0 0;
+        }
+
+        .anniversary__video-box {
+            text-align: center;
+
+        }
     }
 
     .activities__projects-container {

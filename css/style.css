@@ -7,6 +7,19 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fbbc09;
+}
+
+a:hover {
+  color: #424242;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 h1 {
   color: #fbbc09;
   font-family: "Andika", sans-serif;
@@ -26,7 +39,7 @@ h2 {
 h3 {
   color: #fbbc09;
   font-family: "Andika", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   margin-top: 35px;
 }
@@ -58,6 +71,7 @@ h4 {
   }
   h3 {
     margin-top: 60px;
+    font-size: 30px;
   }
 }
 header {
@@ -77,7 +91,7 @@ header .header__logo {
 
 @media screen and (min-width: 640px) {
   header {
-    height: 60vh;
+    height: 90vh;
   }
 }
 nav {
@@ -89,16 +103,16 @@ nav .menu__checkbox, nav .menu__checkbox-label {
 nav .menu__list {
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
-  padding: 1em 0;
+  padding: 1em 20px;
   margin: 0;
 }
 nav .menu__link {
   text-decoration: none;
   color: #F6F6F6;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   padding: 1em 1em;
 }
 nav .menu__link:hover {
@@ -118,10 +132,18 @@ nav .menu__link--active {
   .menu__item-secondary {
     display: none;
   }
+  .menu__link {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 640px) {
+  nav .menu__link {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 800px) {
-  .menu__link {
-    font-size: 30px;
+  nav .menu__link {
+    font-size: 25px;
   }
 }
 footer {
@@ -310,20 +332,6 @@ footer .footer__link .footer__link + .footer__link {
     font-size: 40px;
     margin-bottom: 80px;
   }
-  .front-intro__column-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .front-intro__column {
-    margin: 10px;
-    padding: 30px;
-    width: calc((100% - 100px) / 3);
-    border: 0.5px solid #a8a7a7;
-  }
-  .front-intro__column + .front-intro__column {
-    margin-left: 20px;
-  }
   .page-text {
     display: grid;
     grid-template-columns: "1fr 1fr";
@@ -343,18 +351,6 @@ footer .footer__link .footer__link + .footer__link {
     width: 100%;
     max-width: 40vw;
   }
-  .anniversary__video-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .anniversary__video-container .anniversary__video {
-    width: 100%;
-    max-width: 250px;
-    margin: 30px 30px 0 0;
-  }
-  .anniversary__video-container .anniversary__video-box {
-    text-align: center;
-  }
 }
 @media screen and (min-width: 800px) {
   .front-intro__column-container {
@@ -363,9 +359,20 @@ footer .footer__link .footer__link + .footer__link {
   }
   .front-intro__column-container .front-intro__column {
     margin-bottom: 100px;
+    border: 1px solid #fbbc09;
+    margin: 0 5px;
   }
-  .front-intro__column-container .front-intro__column + .front-intro__column {
-    margin-left: 30px;
+  .page-intro {
+    font-size: 20px;
+    font-weight: bold;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .front-intro__column-container--anniversary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .front-team {
     display: flex;
@@ -387,9 +394,28 @@ footer .footer__link .footer__link + .footer__link {
   .team__list {
     list-style: none;
   }
+  .infobox-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .infobox-container .infobox-container__item {
+    border: 1px solid #fbbc09;
+    margin: 0 10px;
+    max-width: 45%;
+    padding: 20px;
+  }
   .anniversary__video-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .anniversary__video-container .anniversary__video {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px 30px 0 0;
+  }
+  .anniversary__video-container .anniversary__video-box {
+    text-align: center;
   }
   .activities__projects-container {
     display: grid;

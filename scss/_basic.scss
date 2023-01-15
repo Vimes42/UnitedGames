@@ -9,6 +9,20 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: colors.$primary;
+    
+}
+
+a:hover {
+    color: colors.$box-color;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 h1 {
     color: colors.$primary;
     font-family: 'Andika', sans-serif;
@@ -28,7 +42,7 @@ h2 {
 h3 {
     color: colors.$primary;
     font-family: 'Andika', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     margin-top: 35px;
 }
@@ -41,6 +55,7 @@ h4 {
 }
 
 @media screen and (min-width: 640px) {
+
     h1 {
         margin-top: 80px;
     }
@@ -65,5 +80,6 @@ h4 {
 
     h3 {
         margin-top: 60px;
+        font-size: 30px;
     }
 }
